@@ -19,10 +19,11 @@
     -ms-flex-direction: row;
     flex-direction: row;
     font-weight: bold;
-    border: 2px solid #cccccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     height: 3.75em;
     width: 12.5em;
+    color: #4a5154;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.875em;
     -webkit-box-align: center;
@@ -50,8 +51,9 @@
         -ms-flex-direction: column;
         flex-direction: column;
         font-weight: bold;
-        border: 2px solid #cccccc;
+        border: 1px solid #cccccc;
         border-radius: 4px;
+        color: #4a5154;
         height: 5.625em;
         width: 6.875em;
         font-family: 'Open Sans', sans-serif;
@@ -75,7 +77,7 @@
 
 .container input[type="checkbox"]:checked~.box {
     color: #118bcc;
-    border-color: #118bcc;
+    border: 2px solid #118bcc;
 }
 
 .container input[type="checkbox"]:checked~.box>img {
