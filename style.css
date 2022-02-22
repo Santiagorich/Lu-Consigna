@@ -56,6 +56,10 @@
     }
     /*Change box size for mobile*/
     .box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
         height: 5.625em;
         width: 6.875em;
     }
