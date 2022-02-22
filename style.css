@@ -31,35 +31,31 @@
     align-items: center;
 }
 
+
+/*Label container*/
+
 .labelcont {
     position: relative;
     height: 50%;
 }
 
+
+/*Mobile adaptation*/
+
 @media only screen and (max-width: 600px) {
+    /*Make the label container shorter to reduce gaps*/
     .labelcont {
         position: relative;
         height: 85%;
     }
+    /*Make the container thinner to keep 3 columns*/
     .container {
         width: 21em;
     }
+    /*Change box size for mobile*/
     .box {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        font-weight: bold;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-        color: #4a5154;
         height: 5.625em;
         width: 6.875em;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 0.875em;
     }
     .box p {
         margin: 0;
@@ -70,6 +66,9 @@
     padding: 0.5em;
     max-width: 42px;
 }
+
+
+/*Checkbox styling*/
 
 .container input[type="checkbox"] {
     visibility: hidden;
@@ -85,6 +84,9 @@
 .container input[type="checkbox"]:checked~.box>img {
     content: url('blue.png');
 }
+
+
+/*Label at same size as container for toggling when clicking*/
 
 .invlabel {
     position: absolute;
