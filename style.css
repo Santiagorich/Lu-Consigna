@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 .container {
     width: 23.5em;
-    height: 6.25em;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 
 .box {
@@ -43,13 +43,6 @@
     }
     .container {
         width: 21em;
-        height: 6.25em;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        gap: 10px;
     }
     .box {
         display: -webkit-box;
