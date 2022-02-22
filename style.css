@@ -31,7 +31,16 @@
     align-items: center;
 }
 
+.labelcont {
+    position: relative;
+    height: 50%;
+}
+
 @media only screen and (max-width: 600px) {
+    .labelcont {
+        position: relative;
+        height: 85%;
+    }
     .container {
         width: 21em;
         height: 6.25em;
@@ -82,10 +91,6 @@
 
 .container input[type="checkbox"]:checked~.box>img {
     content: url('blue.png');
-}
-
-.labelcont {
-    position: relative;
 }
 
 .invlabel {
