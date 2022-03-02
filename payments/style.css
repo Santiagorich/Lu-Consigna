@@ -1,0 +1,196 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    max-width: 400px;
+}
+
+.main {
+    gap: 2em;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*Solo porque me gusto mas que se viera el "Ver todas las opciones de cuotas" en el medio*/
+    width: 100%;
+}
+
+.card {
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: auto;
+    background-color: #FFEEEF;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #ac5156;
+    padding: 1px;
+    height: 1.5em;
+    width: 7em;
+}
+
+#detailcol {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fdfeff;
+    border-radius: 5px;
+}
+
+
+/*Could use .hidden with !important to avoid more lines which shouldn't break the cs*/
+
+#detailcol.hidden {
+    display: none;
+}
+
+#cuotacol.hidden {
+    display: none;
+}
+
+#detailcol p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.topone {
+    display: flex;
+    padding: 0.25em;
+    background-color: #f1f9fE;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.topone p {
+    margin: 0.35em;
+}
+
+.subtop {
+    font-size: 28px;
+}
+
+label[for="seemore"] {
+    font-size: 1em;
+    font-weight: bold;
+    color: #0379b4;
+}
+
+.optionscont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#bottomsee {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.collapse {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -8 24 24' width='24' fill='currentColor'%3E%3Cpath d='M7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364l4.95 4.95z'%3E%3C/path%3E%3C/svg%3E");
+    margin-right: 0.5em;
+    height: 3em;
+}
+
+.collapse:checked {
+    transform: rotate(180deg);
+}
+
+.tiny {
+    height: 1em;
+}
+
+.option {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cuotas {
+    margin: 0 0.5em 0.5em 0;
+}
+
+.total {
+    width: 100%;
+    text-align: end;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-right: 1.5em;
+}
+
+.ptf {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0%;
+}
+
+.option .radio {
+    align-self: center;
+    padding: 1em;
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    width: 1.45em;
+    height: 1.45em;
+    border: 0.10em solid #cccccc;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type=radio]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    box-shadow: inset 1em 1em #048DCF;
+}
+
+input[type=radio]:checked::before {
+    transform: scale(1);
+}
