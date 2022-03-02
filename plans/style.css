@@ -1,0 +1,190 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 65, 65);
+}
+
+.contenedor {
+    margin: 5em;
+    display: flex;
+    align-content: center;
+}
+
+.columna {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.plancol {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.plancont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.carta {
+    width: 13.75em;
+    height: 15em;
+    padding: 0.625em;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.outer {
+    position: relative;
+}
+
+.starred {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    top: 0;
+    right: 0;
+}
+
+.starred svg {
+    fill: rgb(255, 223, 40);
+    height: 100%;
+}
+
+.plantitle {
+    font-size: 1.875em;
+    font-weight: 650;
+    line-height: 2.1875em;
+    line-height: 100%;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+}
+
+.plan {
+    height: 11.5625em;
+    max-width: 720px;
+    background-color: #e5f4fd;
+    border-radius: 17px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.price {
+    font-size: large;
+    font-weight: bold;
+}
+
+.boton {
+    appearance: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    height: 2.5em;
+    width: 100%;
+}
+
+.content {
+    padding: 0 1em 1em 1em;
+    flex-grow: 1;
+    height: 70%;
+}
+
+.primario {
+    background-color: #00a5e1;
+    color: white;
+}
+
+.primario:hover {
+    background-color: #0092c7;
+}
+
+.secundario {
+    background-color: white;
+    color: #00a5e1;
+    border: #00a5e1 solid 1px;
+}
+
+.secundario:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.plantext {
+    align-self: flex-start;
+}
+
+.subtop {
+    margin-top: 1em;
+    font-size: 0.625em;
+    font-weight: 500;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.promo p {
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.625em;
+    font-weight: 400;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: -0.55em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+@media only screen and (max-width: 745px) {
+    .plan {
+        height: 100%;
+        width: 40%;
+        padding: 2em;
+    }
+    .plantext {
+        margin-bottom: 5em;
+        /*Made it smaller to take up less screen space*/
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .plancont {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .plancol {
+        gap: 2em;
+    }
+    .carta {
+        height: 100%;
+    }
+}
